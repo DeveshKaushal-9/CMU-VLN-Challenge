@@ -1,0 +1,19 @@
+# Python dependencies for the AI module, on top of the organizers' base image
+# (zhangjicmu/ubuntu24_ros:ai_module, Python 3.12, ROS 2 Jazzy).
+#
+# torch and torchvision are the CPU-only builds: the simulation evaluation
+# machine has no discrete GPU, and the CPU wheel is a fraction of the size of
+# the CUDA one. Install them from the PyTorch CPU index:
+#
+#   pip3 install --index-url https://download.pytorch.org/whl/cpu torch torchvision
+#   pip3 install -r requirements.txt
+#
+# Versions are those baked into the submitted image; ai_module/docker/Dockerfile
+# is the authoritative build and also pre-downloads the OWLv2 detector weights
+# so nothing is fetched from the network at evaluation time.
+
+torch==2.13.0+cpu
+torchvision==0.28.0+cpu
+transformers==5.15.1
+pillow==10.2.0
+numpy==1.26.4

@@ -1,0 +1,14 @@
+.vscode
+
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Downloaded Unity scene models (5.5GB, fetched from the organizers Google Drive)
+scenes/
+
+# Per-scene challenge material (109MB of PDFs and reference trajectories).
+# Provided by the organizers and not needed to build or run the module, so it
+# is kept out of the submission; questions/questions.json is tracked because
+# ai_module/test/test_reasoning.py reads it.
+questions/*/

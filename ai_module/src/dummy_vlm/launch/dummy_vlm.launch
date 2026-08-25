@@ -1,0 +1,8 @@
+<launch>
+
+  <node pkg="dummy_vlm" exec="dummyVLM" name="dummyVLM" output="screen">
+    <param name="total_budget" value="600.0" />
+    <param name="waypoint_reach" value="1.0" />
+  </node>
+
+</launch>
